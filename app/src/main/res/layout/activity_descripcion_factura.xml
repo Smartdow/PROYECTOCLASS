@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/spalsh"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context="com.example.aprendiz.proyectoclass.descripcionFactura">
+
+
+    <LinearLayout
+        android:background="@color/transparente"
+        android:layout_width="300dp"
+        android:orientation="vertical"
+        android:layout_height="450dp">
+
+        <TextView
+
+            android:text="Compra  "
+            android:gravity="center"
+            android:paddingTop="20dp"
+            android:textSize="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:paddingTop="20dp"
+            android:id="@+id/Usuario2"
+            android:gravity="left"
+            android:text="Usuario"
+            android:textSize="18dp"
+            android:paddingLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+
+            android:paddingTop="5dp"
+            android:id="@+id/fecha2"
+            android:gravity="left"
+            android:text="Fecha"
+            android:textSize="18dp"
+            android:paddingLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+
+
+            android:gravity="center"
+            android:text="Productos"
+            android:textSize="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"/>
+
+        <GridView
+            android:id="@+id/Products"
+            android:layout_width="match_parent"
+
+            android:layout_height="240dp"></GridView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_weight="0.2">
+            <TextView
+
+                android:gravity="center"
+                android:text="Total"
+                android:textSize="20dp"
+                android:paddingRight="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+           <TextView
+            android:id="@+id/TotalPrecio2"
+            android:gravity="center"
+            android:text="Total"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

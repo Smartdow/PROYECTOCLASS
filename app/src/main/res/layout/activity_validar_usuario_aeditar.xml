@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/spalsh"
+    tools:context="com.example.aprendiz.proyectoclass.validarUsuarioAEditar">
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Autorización"
+       android:textColor="#000000"
+       android:textSize="30dp"
+       android:paddingBottom="15dp"
+       />
+
+<LinearLayout
+    android:background="@color/transparente"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_width="320dp"
+    android:layout_height="320dp">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Escribe de nuevo tu usuario/contraseña "
+        android:textColor="@color/Rojo"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="para poder editar"
+        android:textColor="@color/Rojo"
+        android:layout_height="wrap_content"
+        android:paddingBottom="18dp"/>
+
+
+    <EditText
+        android:id="@+id/et_Usuario"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#4F5FFFFF"
+        android:drawableLeft="@mipmap/ic_launcher_createuser"
+        android:ems="10"
+        android:hint="Usuario"
+        android:inputType="text"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:textColor="@color/blanco"
+        android:textColorHint="@color/blanco"
+        android:textSize="15dp" />
+
+
+
+
+    <EditText
+        android:id="@+id/et_Contrasenia"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#4F5FFFFF"
+        android:drawableLeft="@mipmap/ic_launcher_password"
+        android:ems="10"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:textColor="@color/blanco"
+        android:textColorHint="@color/blanco"
+        android:textSize="15dp" />
+
+
+    <Button
+
+        android:id="@+id/btn_Ingresar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Siguiente" />
+
+
+</LinearLayout>
+
+
+
+
+</LinearLayout>

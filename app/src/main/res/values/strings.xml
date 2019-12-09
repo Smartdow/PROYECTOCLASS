@@ -1,0 +1,49 @@
+<resources>
+
+    <string name="app_name">Mi Tienda Online</string>
+
+    <string name="bienvenido">Iniciar Sesión</string>
+    <string name="Registro">Registrarse</string>
+    <string name="usuario">Usuario</string>
+    <string name="contrasenia">contraseña</string>
+    <string name="hola">Hola Mundo</string>
+    <string name="ingresar">Ingresar</string>
+    <string name="error_inicio">Usuario y Contraseña incorrecto</string>
+
+
+    <string-array name="identificacionTipo">
+        <item name="1">Cedula de ciudadania</item>
+        <item name="2">Tarjeta de identidad</item>
+        <item name="3">Cedula de Extranjeria</item>
+        <item name="4">Pasaporte</item>
+
+    </string-array>
+
+    <string name="tipoDocumento">Tipo Documento</string>
+    <string name="documentoRegistro">N°Documento</string>
+    <string name="nombreRegistro">Nombre</string>
+    <string name="apellidoRegistro">Apellido</string>
+    <string name="correoRegistro">Correo</string>
+    <string name="telefonoRegistro">Telefono</string>
+    <string name="avatarRegistro">Avatar</string>
+    <string name="direccionRegistro">Direccion</string>
+
+
+    <string name="nombre">Nombre</string>
+    <string name="precio">Precio</string>
+    <string name="no_datos">Nombre</string>
+    <string name="image_desc">Foto Persona</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="array_country">
+        <item>Producto</item>
+        <item>Producto1</item>
+        <item>Producto2</item>
+        <item>Producto3</item>
+
+    </string-array>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

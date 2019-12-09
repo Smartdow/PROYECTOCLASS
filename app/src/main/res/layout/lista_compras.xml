@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/spalsh"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.aprendiz.proyectoclass.MainActivity"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+android:background="@drawable/spalsh"
+        android:orientation="vertical">
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="124dp"
+            android:orientation="horizontal"
+            android:paddingLeft="40dp"
+            android:paddingTop="12dp"
+           >
+
+
+            <ImageView
+
+                android:id="@+id/imageView5"
+                android:layout_width="100dp"
+                android:layout_height="90dp"
+                android:src="@drawable/aquijue"
+                 />
+
+            <TextView
+                android:id="@+id/usuarioIniciado"
+                android:layout_width="254dp"
+                android:textColor="@color/blanco"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:paddingTop="19dp"
+                android:text="NombreUsuario"
+                android:textSize="25dp" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+
+    android:gravity="center"
+    android:layout_width="match_parent"
+        android:background="@color/transparente"
+    android:layout_height="46dp">
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Añadidos al carrito"
+        android:textSize="20dp"
+
+        android:textColor="@color/blanco"/>
+
+</LinearLayout>
+    <LinearLayout
+
+android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="35dp">
+
+        <TextView
+
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Nombre"
+
+            android:gravity="center_horizontal"
+            android:textSize="15dp"
+            android:textColor="@color/blanco"/>
+        <TextView
+            android:layout_width="2dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blanco"
+            android:text="|"/>
+        <TextView
+
+            android:layout_width="86dp"
+            android:layout_height="wrap_content"
+            android:text="Cantidad"
+
+            android:gravity="center_horizontal"
+            android:textSize="15dp"
+            android:textColor="@color/blanco"/>
+        <TextView
+            android:layout_width="2dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blanco"
+            android:text="|"/>
+        <TextView
+
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+
+            android:text="Precio"
+            android:textSize="15dp"
+            android:textColor="@color/blanco"/>
+
+    </LinearLayout>
+
+    <GridView
+
+        android:id="@+id/am_gv_gridviewDeseos1"
+        android:layout_width="match_parent"
+        android:layout_height="275dp"
+        android:columnWidth="100dp"
+
+        android:layout_weight="0.99"
+        />
+    <LinearLayout
+        android:gravity="center"
+        android:background="@color/transparente"
+        android:layout_width="match_parent"
+        android:layout_height="46dp">
+
+        <TextView
+            android:id="@+id/total"
+            android:gravity="center"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="0"
+            android:textSize="23dp"
+            android:textColor="@color/blanco"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/EnviarBD"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#118FFF"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="COMPRAR"
+
+         />
+</LinearLayout>

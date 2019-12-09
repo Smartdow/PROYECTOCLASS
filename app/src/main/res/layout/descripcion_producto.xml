@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+android:background="@drawable/spalsh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+<LinearLayout
+    android:background="@color/gris"
+    android:layout_width="match_parent"
+    android:layout_height="190dp">
+
+    <ImageView
+        android:paddingTop="10dp"
+        android:gravity="center"
+        android:id="@+id/fot"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+
+        />
+</LinearLayout>
+
+
+    <LinearLayout
+
+        android:paddingTop="20dp"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+        <LinearLayout
+android:background="@color/transparente"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:paddingLeft="28dp"
+                android:id="@+id/tv_nombr"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:text="@string/nombre"
+                android:textColor="@color/blanco"
+                android:textAppearance="@android:style/TextAppearance.Large"
+                android:textSize="23dp" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:gravity="center_horizontal"
+    android:layout_height="50dp">
+
+
+    <TextView
+        android:gravity="center_vertical"
+        android:paddingLeft="25dp"
+
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:textColor="@color/blanco"
+        android:textSize="20dp"
+        android:text="$"
+        />
+    <TextView
+        android:gravity="center_vertical"
+
+        android:id="@+id/tv_preci"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textColor="@color/blanco"
+        android:textSize="20dp"
+        android:text="19000"
+        />
+
+
+
+</LinearLayout>
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <LinearLayout
+
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+             <!--   <Button
+                    android:gravity="center"
+                    android:id="@+id/btnMenos"
+                    android:src="@android:drawable/ic_menu_revert"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+
+                    android:text="-"
+                    />-->
+
+
+                <TextView
+                    android:id="@+id/count"
+                    android:paddingTop="6dp"
+                    android:gravity="center"
+                    android:layout_width="40dp"
+                    android:textSize="20dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/blanco"
+                    android:text="1"
+                    />
+
+             <!--   <Button
+                    android:id="@+id/btnMas"
+                    android:src="@android:drawable/ic_input_add"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:text="+"-->
+                    />
+
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+
+
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="80dp">
+
+                <Button
+
+                    android:background="@color/azul"
+                    android:textColor="@color/blanco"
+                    android:gravity="center"
+                    android:id="@+id/comprar1"
+                    android:layout_width="298dp"
+                    android:layout_height="50dp"
+                    android:text="Comprar"
+                    android:textSize="17dp"/>
+
+            </LinearLayout>
+
+
+            <GridView
+                android:id="@+id/am_gv_gridviewdeseos"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+
+            </GridView>
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

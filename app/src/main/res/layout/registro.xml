@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/spalsh"
+    tools:context="com.example.aprendiz.proyectoclass.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+
+        android:gravity="center"
+        android:paddingTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+
+
+        <ImageView
+
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+           />
+
+        <ImageButton
+            android:id="@+id/ib_camera"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@android:drawable/ic_menu_camera"
+            android:visibility="invisible" />
+
+
+
+        <ImageView
+            android:id="@+id/avatar"
+            android:layout_width="150dp"
+            android:layout_height="90dp"
+            android:src="@drawable/fotoregistrer" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/ib_galleria"
+                android:layout_width="47dp"
+                android:layout_height="50dp"
+                android:src="@android:drawable/ic_menu_gallery"
+                android:visibility="invisible" />
+
+            <ImageView
+
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                />
+
+            <TextView
+                android:id="@+id/idTipoDocumentoNumb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="7dp"
+                android:text="0"
+                android:textColor="@color/blanco"
+                android:textSize="17dp"
+                android:visibility="invisible" />
+
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="325dp"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp">
+
+        <LinearLayout
+            android:paddingLeft="7dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="10dp">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Registro"
+                    android:textColor="@color/blanco"
+                    android:textSize="18dp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+
+
+                android:layout_width="310dp"
+                android:layout_height="60dp"
+                android:background="#4F5FFFFF"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="7dp"
+
+                    android:text="@string/tipoDocumento"
+                    android:textColor="@color/blanco"
+                    android:textSize="17dp" />
+
+                <Spinner
+                    android:id="@+id/tipoDocumento"
+                    android:layout_width="206dp"
+                    android:layout_height="wrap_content"
+                    android:spinnerMode="dialog"
+                    android:textColor="@color/blanco"></Spinner>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="310dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/documentoPersona"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="#4F5FFFFF"
+                    android:drawableLeft="@mipmap/ic_launcher_documento"
+                    android:ems="10"
+
+                    android:hint="@string/documentoRegistro"
+                    android:inputType="number"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:selectAllOnFocus="false"
+                    android:singleLine="false"
+                    android:textColor="@color/blanco"
+                    android:textColorHint="@color/blanco"
+                    android:textSize="17dp" />
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+
+                android:layout_width="310dp"
+                android:paddingBottom="10dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/nombrePersona"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="#4F5FFFFF"
+                    android:drawableLeft="@mipmap/ic_launcher_user"
+                    android:ems="10"
+                    android:hint="@string/nombreRegistro"
+                    android:inputType="textPersonName"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:selectAllOnFocus="false"
+                    android:textColor="@color/blanco"
+                    android:textColorHint="@color/blanco"
+                    android:textSize="17dp" />
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="310dp"
+                android:paddingBottom="10dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <EditText
+                    android:id="@+id/apellidoPersona"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="#4F5FFFFF"
+                    android:drawableLeft="@mipmap/ic_launcher_apellido"
+                    android:ems="10"
+                    android:hint="@string/apellidoRegistro"
+                    android:inputType="textPersonName"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:selectAllOnFocus="false"
+                    android:textColor="@color/blanco"
+                    android:textColorHint="@color/blanco"
+                    android:textSize="17dp" />
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="310dp"
+                android:paddingBottom="10dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/correoPersona"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="#4F5FFFFF"
+                    android:drawableLeft="@mipmap/ic_launcher_correo"
+                    android:ems="10"
+                    android:hint="Correo     (ejemplo@gmail.com)"
+                    android:inputType="textEmailAddress"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:selectAllOnFocus="false"
+                    android:textColor="@color/blanco"
+                    android:textColorHint="@color/blanco"
+                    android:textSize="17dp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="310dp"
+                android:paddingBottom="10dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/telefonoPersona"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="#4F5FFFFF"
+                    android:drawableLeft="@mipmap/ic_launcher_telefono"
+                    android:ems="10"
+                    android:hint="Telefono"
+                    android:inputType="number"
+                    android:maxLength="11"
+                    android:minEms="10"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:selectAllOnFocus="false"
+                    android:textColor="@color/blanco"
+                    android:textColorHint="@color/blanco"
+                    android:textSize="17dp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="310dp"
+                android:paddingBottom="10dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/direccionPersona"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="#4F5FFFFF"
+                    android:drawableLeft="@mipmap/ic_launcher_home"
+                    android:ems="10"
+                    android:hint="@string/direccionRegistro"
+                    android:inputType="textPostalAddress"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:selectAllOnFocus="false"
+                    android:textColor="@color/blanco"
+                    android:textColorHint="@color/blanco"
+                    android:textSize="17dp" />
+
+
+            </LinearLayout>
+
+
+            <TextView
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Crear Usuario"
+    android:textSize="18dp"
+    android:textColor="@color/gris"/>
+
+            <LinearLayout
+
+
+
+                android:paddingBottom="10dp"
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <EditText
+                    android:id="@+id/Crearusuario"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="#4F5FFFFF"
+                    android:drawableLeft="@mipmap/ic_launcher_createuser"
+                    android:ems="10"
+                    android:hint="Usuario"
+                    android:inputType="text"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:textColor="@color/blanco"
+                    android:textColorHint="@color/blanco"
+                    android:textSize="15dp" />
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="310dp"
+                android:paddingBottom="10dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/crearPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="#4F5FFFFF"
+                    android:drawableLeft="@mipmap/ic_launcher_password"
+                    android:ems="10"
+                    android:hint="Constraseña"
+                    android:inputType="textPassword"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:textColor="@color/blanco"
+                    android:textColorHint="@color/blanco"
+                    android:textSize="15dp" />
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btn_Registrar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Registrarme" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp" />
+
+
+            </LinearLayout>
+
+            </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>
+    </ScrollView>
+</LinearLayout>

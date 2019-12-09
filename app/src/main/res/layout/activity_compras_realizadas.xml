@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@drawable/spalsh"
+    tools:context="com.example.aprendiz.proyectoclass.ComprasRealizadas">
+
+>
+  <LinearLayout
+
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:background="@color/transparente"
+    android:layout_height="52dp">
+
+  <TextView
+
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Compras Realizadas"
+      android:textSize="20dp"
+
+      android:textColor="@color/blanco"/>
+
+</LinearLayout>
+  <LinearLayout
+
+      android:gravity="center_vertical"
+      android:layout_width="match_parent"
+      android:layout_height="35dp">
+
+    <TextView
+
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Pago Total"
+
+        android:gravity="center_horizontal"
+        android:textSize="15dp"
+        android:textColor="@color/blanco"/>
+    <TextView
+        android:layout_width="2dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/blanco"
+        android:text="|"/>
+    <TextView
+
+        android:layout_width="86dp"
+        android:layout_height="wrap_content"
+        android:text="Fecha"
+
+        android:gravity="center_horizontal"
+        android:textSize="15dp"
+        android:textColor="@color/blanco"/>
+    <TextView
+        android:layout_width="2dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/blanco"
+        android:text="|"/>
+    <TextView
+
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+
+        android:text="Info"
+        android:textSize="15dp"
+        android:textColor="@color/blanco"/>
+
+  </LinearLayout>
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="20dp" />
+  <GridView
+      android:layout_width="match_parent"
+      android:id="@+id/misfacturas"
+      android:layout_height="match_parent">
+
+  </GridView>
+</LinearLayout>

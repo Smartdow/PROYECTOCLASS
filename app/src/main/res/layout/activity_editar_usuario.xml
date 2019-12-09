@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/spalsh"
+    tools:context="com.example.aprendiz.proyectoclass.MainActivity">
+
+
+    <TextView
+                android:textColor="#000000"
+                android:paddingTop="30dp"
+                android:textSize="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Editar Información" />
+            <LinearLayout
+                android:layout_marginTop="10pt"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/et_Usuario11"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="#FFFFFF"
+                    android:drawableLeft="@mipmap/ic_launcher_edit_user1"
+                    android:ems="10"
+                    android:hint="Usuario"
+                    android:inputType="text"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:textColor="#000000"
+                    android:textColorHint="#000000"
+                    android:textSize="18dp" />
+            </LinearLayout>
+
+
+    <LinearLayout
+        android:paddingTop="10dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/et_Contrasenia_Nueva"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#FFFFFF"
+            android:drawableLeft="@mipmap/ic_launcher_editpassword"
+            android:ems="10"
+            android:hint="Nueva Contraseña"
+            android:inputType="textPassword"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:textColor="#000000"
+            android:textColorHint="#000000"
+            android:textSize="18dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:paddingTop="10dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/et_Contrasenia_Confirma"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#FFFFFF"
+            android:drawableLeft="@mipmap/ic_launcher_editpassword"
+            android:ems="10"
+            android:hint="Confirmar Contraseña"
+            android:inputType="textPassword"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:textColor="#000000"
+            android:textColorHint="#000000"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/btn_Editar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Editar" />
+                <Button
+                    android:id="@+id/btn_Cancelar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cancelar" />
+            </LinearLayout>
+        </LinearLayout>

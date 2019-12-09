@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/spalsh"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:paddingTop="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/EditarUsuario"
+
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+
+            android:layout_height="60dp">
+            <TextView
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:background="@color/gris1"
+                android:drawableRight="@mipmap/ic_launcher_user_edit"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Editar Perfil"
+                android:textSize="20dp"
+                android:textColor="#000000"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cerrarSesion"
+
+            android:gravity="center_vertical"
+
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+            <TextView
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:background="@color/gris"
+                android:drawableRight="@mipmap/ic_launcher_star"
+                android:paddingLeft="20dp"
+                android:layout_height="50dp"
+                android:text="Cerrar Sesión"
+                android:textSize="20dp"
+                android:textColor="#000000"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>
+
+
+
+
